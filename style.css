@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    border: 10px solid black;
+}
+
+.square {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    flex-basis: calc(100% / 16); /* Start with 16x16 grid */
+    height: calc(100% / 16);
+}
+
+.square:hover {
+    background-color: #333;
+}
